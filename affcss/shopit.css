@@ -31,6 +31,11 @@ body {
 .upping {
     display: flex;
 }
+#shopit {
+    display: flex;
+    flex-direction: column;
+    
+}
 
 .shopit-nav {
     width: 100vw;
@@ -39,10 +44,13 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(10, 10, 10, 0.6);
+    background-color: transparent;
     padding: 0px 25px;
     height: 50px;
     z-index: 100;
+}
+.shopit-color {
+    background-color: rgb(10, 10, 10, 0.8);
 }
 
 #btn-parent button{
@@ -59,7 +67,7 @@ body {
     position: fixed;
     height: 0%;
     width: 50%;
-    left: 0;
+    right: 0;
     top: 0;
     z-index: 1;
     transition: 0.5s;
@@ -77,8 +85,8 @@ body {
 .nav-btn {
     background-color: transparent;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 10px;
+    top: 10px;
     width: 20px;
     height: 20px;
     display: flex;
