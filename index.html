@@ -14,6 +14,11 @@
                 <img src="./shopit.PNG" width="70px">
             </div>
 
+            <form>
+                <img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png" />
+                <input type="text" name="" id="search-item" placeholder="Search Product" onkeyup="search()">
+            </form>
+
             
             <div class="burger">
                 <hr><hr><hr>
@@ -25,20 +30,20 @@
                 
                 <ul>
                     <li class="li"><a href="#product">product</a></li>
-                    <li class="li"><a href="#tools-Electronic">gadget</a></li>
+                    <li class="li"><a href="./gadget.html">gadget</a></li>
                     <li class="li"><a href="./beauty.html">beauty</a></li>
                     <li class="li"><a href="./beauty.html">fashion</a></li>
                     <li class="li"><a href="#">kitchen</a></li>
                 </ul>
             </div>
-            
-        </div>
-        <div class="shop-img">
-            <h1>Get The Best<span></span></h1>
-            <h1>Product<span></span></h1>
-            <span id="btn-parent"><button>ShopiT</button></span>
         </div>
     </section>
+
+    <div class="shop-img">
+        <h1>Get The Best<span></span></h1>
+        <h1>Product<span></span></h1>
+        <span id="btn-parent"><button>ShopiT</button></span>
+    </div>
     
     <div class="upper">
         <a href="#"><img src="./arrow.PNG" width="30px"></a>
@@ -47,24 +52,63 @@
 
     <section id="product">
         <h1>PRODUCT</h1>
-        <div class="product-item">
+
+        <div class="alert-message active">
+            <img
+                src="https://img.icons8.com/external-others-cattaleeya-thongsriphong/64/000000/external-Alert-mobile-application-blue-others-cattaleeya-thongsriphong.png" />
+            <h4>NO ITEM FOUND</h4>
+            <p>check the menu bar at the top right corner for more option</p>
+        </div>
 
 
+        <div class="product-item" id="product-list">
 
 
             <div class="products">
                 <div class="product-img">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/71M4TY8j8oL.__AC_SX300_SY300_QL70_FMwebp_.jpg" width="150px">
+                    <img src="https://m.media-amazon.com/images/I/71IYwASVabL._AC_SX450_.jpg" width="150px">
+                </div>
+                <div class="product-info">
+                    <h4>Toss and Chop Salad Tong</h4>
+                    <a href="https://amzn.to/3xWFDKh"><button>BUY NOW</button></a>
+                </div>
+            </div>
+            
+            <div class="products">
+                <div class="product-img">
+                    <img src="https://m.media-amazon.com/images/I/71J2d3wWWtL._AC_UL320_.jpg" width="150px">
+                </div>
+                <div class="product-info">
+                    <h4>XYJ Culinary Knife Set</h4>
+                    <a href="https://amzn.to/3ygWkkU"><button>BUY NOW</button></a>
+                </div>
+            </div>
+            
+            
+            
+            <div class="products">
+                <div class="product-img">
+                    <img src="https://m.media-amazon.com/images/I/91yi58PNGxL._AC_UL320_.jpg" width="150px">
+                </div>
+                <div class="product-info">
+                    <h4>Airtight Food Storage Container</h4>
+                    <a href="https://amzn.to/3HTiZ9T"><button>BUY NOW</button></a>
+                </div>
+            </div>
+            <div class="products">
+                <div class="product-img">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/71M4TY8j8oL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+                        width="150px">
                 </div>
                 <div class="product-info">
                     <h4>Portable Blender</h4>
                     <a href="https://amzn.to/39p3I49"><button>BUY NOW</button></a>
                 </div>
             </div>
-
-
-
-
+            
+            
+            
+            
             <div class="products">
                 <div class="product-img">
                     <img src="https://m.media-amazon.com/images/I/61+gpemlA-L._AC_SX522_.jpg" width="150px">
@@ -74,10 +118,10 @@
                     <a href="https://amzn.to/3xsgEhr"><button>BUY NOW</button></a>
                 </div>
             </div>
-
-
-
-
+            
+            
+            
+            
             <div class="products">
                 <div class="product-img">
                     <img src="https://m.media-amazon.com/images/I/41+KNR5AsbL._SY355_.jpg" width="150px">
@@ -210,161 +254,9 @@
 
 
 
+    
 
 
-
-
-    <section id="tools-Electronic">
-        <div class="elect-bg">
-            <h1>Tools & Electronic</h1>
-            <h1>Gadget</h1>
-        </div>
-        <div class="product-item">
-
-
-
-
-            <div class="products">
-                <div class="product-img">
-                    <img src="https://m.media-amazon.com/images/I/61UnnT4R98L._AC_UL320_.jpg" width="150px">
-                </div>
-                <div class="product-info">
-                    <h4>Water Dispenser Pump</h4>
-                    <a href="https://amzn.to/3Qq3Dh9"><button>BUY NOW</button></a>
-                </div>
-            </div>
-
-
-
-
-            <div class="products">
-                <div class="product-img">
-                    <img src="https://m.media-amazon.com/images/I/41eTD0iyOeS._AC_UL320_.jpg" width="150px">
-                </div>
-                <div class="product-info">
-                    <h4>Bathroom Light</h4>
-                    <a href="https://amzn.to/3tGE7KG"><button>BUY NOW</button></a>
-                </div>
-            </div>
-
-
-
-
-            <div class="products">
-                <div class="product-img">
-                    <img src="https://m.media-amazon.com/images/I/51eE2xMds4L._AC_UL320_.jpg" width="150px">
-                </div>
-                <div class="product-info">
-                    <h4>kitchen Faucets</h4>
-                    <a href="https://amzn.to/3mQskWB"><button>BUY NOW</button></a>
-                </div>
-            </div>
-
-
-
-
-            <div class="products">
-                <div class="product-img">
-                    <img src="https://m.media-amazon.com/images/I/61A86XOonML._AC_UL320_.jpg" width="150px">
-                </div>
-                <div class="product-info">
-                    <h4>Glass Rinser</h4>
-                    <a href="https://amzn.to/3xDSEZ4"><button>BUY NOW</button></a>
-                </div>
-            </div>
-
-
-
-
-            <div class="products">
-                <div class="product-img">
-                    <img src="https://m.media-amazon.com/images/I/6186yYk4hkL._AC_SY355_.jpg" width="150px">
-                </div>
-                <div class="product-info">
-                    <h4>USB Headset</h4>
-                    <a href="https://amzn.to/3bb9oiM"><button>BUY NOW</button></a>
-                </div>
-            </div>
-
-
-
-
-            <div class="products">
-                <div class="product-img">
-                    <img src="https://m.media-amazon.com/images/I/81Y88RoDddL._AC_UL320_.jpg" width="150px">
-                </div>
-                <div class="product-info">
-                    <h4>4PCS VR Mask Cover</h4>
-                    <a href="https://amzn.to/3zHw5VF"><button>BUY NOW</button></a>
-                </div>
-            </div>
-
-
-
-
-            <div class="products">
-                <div class="product-img">
-                    <img src="https://m.media-amazon.com/images/I/613sZkNZhWL._AC_UL320_.jpg" width="150px">
-                </div>
-                <div class="product-info">
-                    <h4>Baby Monitor</h4>
-                    <a href="https://amzn.to/3O3u5vq"><button>BUY NOW</button></a>
-                </div>
-            </div>
-
-
-
-
-            <div class="products">
-                <div class="product-img">
-                    <img src="https://m.media-amazon.com/images/I/71rYpBLVP1L._AC_UL320_.jpg" width="150px">
-                </div>
-                <div class="product-info">
-                    <h4>WaterProof Phone Case</h4>
-                    <a href="https://amzn.to/3tCboXs"><button>BUY NOW</button></a>
-                </div>
-            </div>
-
-
-
-
-            <div class="products">
-                <div class="product-img">
-                    <img src="https://m.media-amazon.com/images/I/91fAU6mxFsL._AC_UL320_.jpghttps://m.media-amazon.com/images/I/91fAU6mxFsL._AC_UL320_.jpg" width="150px">
-                </div>
-                <div class="product-info">
-                    <h4>Computer Monitor</h4>
-                    <a href="https://amzn.to/3tDFWrL"><button>BUY NOW</button></a>
-                </div>
-            </div>
-
-
-
-
-            <div class="products">
-                <div class="product-img">
-                    <img src="https://m.media-amazon.com/images/I/61Ei0ywt1lL._AC_UL320_.jpg" width="150px">
-                </div>
-                <div class="product-info">
-                    <h4>Car Phone Mount</h4>
-                    <a href="https://amzn.to/3HszlX9"><button>BUY NOW</button></a>
-                </div>
-            </div>
-
-
-
-
-            <div class="products">
-                <div class="product-img">
-                    <img src="https://m.media-amazon.com/images/I/61-PblYntsL._AC_UL320_.jpg" width="150px">
-                </div>
-                <div class="product-info">
-                    <h4>Nintendo Switch</h4>
-                    <a href="https://amzn.to/3b2aYDx"><button>BUY NOW</button></a>
-                </div>
-            </div>
-        </div>
-    </section>
     <script src="comJS/shopit.js"></script>
 </body>
 </html>

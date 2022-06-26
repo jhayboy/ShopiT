@@ -6,6 +6,45 @@ const beautyNav = document.querySelector('.beauty-nav')
 const up = document.querySelector('.up')
 
 
+
+const search = () => {
+    const searchbox = document.getElementById("search-item").value.toUpperCase();
+    const storeitems = document.getElementById("product-list")
+    const product = document.querySelectorAll(".acne")
+    const pname = storeitems.getElementsByTagName("h4")
+    const alertMessage = document.querySelector(".alert-message")
+
+
+
+    for (i = 0; i < pname.length; i++) {
+        let match = product[i].getElementsByTagName('h4')[0]
+        if (match) {
+            
+            let textValue = match.textContent || match.innerHTML
+            
+            if (textValue.toUpperCase().indexOf(searchbox) > -1) {
+                product[i].style.display = ""
+            }else {
+                product[i].style.display = "none"
+            }
+
+
+
+        }
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
 window.onscroll = () => {
     if (window.scrollY > 300) {
         beautyNav.classList.add("nav-color");
@@ -13,7 +52,7 @@ window.onscroll = () => {
         beautyNav.classList.remove("nav-color");
     }
 
-    if (window.scrollY > 3000) {
+    if (window.scrollY > 600) {
         up.classList.add("up-button")
     } else {
         up.classList.remove("up-button")
