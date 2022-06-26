@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -14,6 +15,7 @@ body {
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .upper {
     display: none;
     justify-content: center;
@@ -28,9 +30,11 @@ body {
     clip-path: circle();
     background-color: rgb(126, 225, 122);
 }
+
 .upping {
     display: flex;
 }
+
 #shopit {
     display: flex;
     flex-direction: column;
@@ -52,11 +56,12 @@ body {
     height: 50px;
     z-index: 100;
 }
+
 .shopit-color {
     background-color: rgb(29, 28, 28);
 }
 
-#btn-parent button{
+#btn-parent button {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     font-size: 20px;
@@ -76,7 +81,8 @@ form {
     padding: 3px 5px;
     border-radius: 12px;
 }
-form input{
+
+form input {
     border: none;
     font-size: 15px;
     font-weight: 500;
@@ -93,45 +99,13 @@ form input{
     top: 0;
     z-index: 1;
     transition: 0.5s;
-    overflow: scroll;
+    overflow-y: scroll;
     background-color: white;
 }
 
-.nav-list::-webkit-scrollbar{
+.nav-list::-webkit-scrollbar {
     width: 0;
 }
-.nav-list ul li:hover .beauty-drop {
-    display: block;
-    border: 1px solid pink;
-    margin-left: 15px;
-    width: 150px;
-    height: auto;
-}
-
-.nav-list ul li:hover .fashion-drop {
-    display: block;
-    border: 1px solid pink;
-    margin-left: 15px;
-    width: 150px;
-    height: auto;
-}
-
-.fashion-drop ul li a {
-    font-size: 15px;
-}
-
-.beauty-drop ul li a {
-    font-size: 15px;
-}
-
-.beauty-drop {
-    display: none;
-}
-
-.fashion-drop {
-    display: none;
-}
-
 
 .nav-img {
     width: 100%;
@@ -141,6 +115,7 @@ form input{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .nav-btn {
     background-color: transparent;
     position: absolute;
@@ -158,7 +133,26 @@ form input{
     cursor: pointer;
 }
 
-ul{
+
+.fashion-drop {
+    display: none;
+}
+
+
+.nav-list ul .li:hover .fashion-drop {
+    display: block;
+    border: 1px solid pink;
+    margin-left: 15px;
+    width: 150px;
+    height: auto;
+}
+
+.fashion-drop ul li a {
+    font-size: 15px;
+
+}
+
+ul {
     left: 5%;
     top: 5%;
     width: 100%;
@@ -174,6 +168,7 @@ ul a {
     cursor: pointer;
     text-transform: uppercase;
 }
+
 ul li {
     margin-top: 20px;
     list-style: none;
@@ -204,7 +199,7 @@ ul li a:hover {
 .shop-img {
     height: 200px;
     width: 100vw;
-    background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b25saW5lJTIwc2hvcHBpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60');
+    background-image: url('https://th.bing.com/th/id/OIP.cgoxBF56bUWqcAa7l5O8tAHaE8?w=284&h=189&c=7&r=0&o=5&pid=1.7');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -214,6 +209,7 @@ ul li a:hover {
     padding: 0px 30px;
     color: rgb(237, 234, 234);
 }
+
 .shop-img h1 {
     color: transparent;
     font-weight: 700;
@@ -221,6 +217,7 @@ ul li a:hover {
     animation-delay: 1.5s;
     position: relative;
 }
+
 .shop-img h1 span {
     position: absolute;
     top: 0;
@@ -232,35 +229,42 @@ ul li a:hover {
     animation: text_reveal_box 1s ease;
     animation-delay: 1s;
 }
+
 .shop-img h1 span:nth-child(1) {
     animation-delay: 1s;
 }
+
 .shop-img h1 span:nth-child(2) {
     animation-delay: 2s;
 }
+
 .shop-img h1:nth-child(1) {
     animation-delay: 1.5s;
 }
+
 .shop-img h1:nth-child(2) {
     animation-delay: 2.5s;
 }
 
-@keyframes text_reveal_box{
-    50%{
+@keyframes text_reveal_box {
+    50% {
         width: 60%;
         left: 0;
     }
-    100%{
+
+    100% {
         width: 0;
         left: 60%;
     }
 }
-@keyframes text_reveal{
+
+@keyframes text_reveal {
     100% {
         color: white;
     }
 }
-@keyframes text_reveal_name{
+
+@keyframes text_reveal_name {
     100% {
         color: crimson;
         font-weight: 500;
@@ -277,15 +281,21 @@ ul li a:hover {
     align-items: center;
     width: 100vw;
 }
+
 #product h1 {
     margin-bottom: 30px;
     font-size: 30px;
 }
+
 .product-item {
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.product-img img {
+    height: 200px;
+}
+
 .products {
     padding: 5px;
     display: flex;
@@ -301,12 +311,14 @@ ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px; 
+    gap: 5px;
 }
+
 .product-info h4 {
-    width: 150px;
+    width: 200px;
     text-align: center;
 }
+
 .product-info button {
     color: white;
     background-color: green;
@@ -318,9 +330,11 @@ ul li a:hover {
     cursor: pointer;
 
 }
+
 .product-info button:hover {
     font-weight: 800;
 }
+
 /* end product */
 
 
@@ -331,6 +345,7 @@ ul li a:hover {
     margin-top: 110px;
     width: 100vw;
 }
+
 .elect-bg {
     background-image: url('https://images.unsplash.com/photo-1515940175183-6798529cb860?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FkZ2V0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60');
     background-size: cover;
@@ -344,6 +359,7 @@ ul li a:hover {
     padding: 30px;
     margin-top: 150px;
 }
+
 .elect-bg h1 {
     color: white;
     font-size: 25px;
@@ -359,10 +375,12 @@ ul li a:hover {
     gap: 10px;
     padding: 20px;
 }
+
 .alert-message h4 {
     font-size: 20px;
     color: rgb(10, 10, 10, 0.5);
 }
+
 .alert-message p {
     width: 300px;
     text-align: center;
@@ -378,18 +396,23 @@ ul li a:hover {
     .shop-img {
         height: 500px;
     }
-    .shop-img h1{
+
+    .shop-img h1 {
         font-size: 50px;
     }
+
     #btn-parent button {
         font-size: 40px;
     }
+
     .product-item {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
     .elect-bg h1 {
         font-size: 50px;
     }
+
     .nav-list {
         width: 20%;
     }

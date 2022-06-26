@@ -3,19 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-.up {
+
+.upper {
     display: none;
     justify-content: center;
     align-items: center;
@@ -30,9 +31,46 @@ body {
     background-color: rgb(126, 225, 122);
 }
 
-.up-button {
+.upping {
     display: flex;
 }
+
+#shopit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(255, 242, 0);
+}
+
+.shopit-nav {
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(10, 10, 10, 0.8);
+    padding: 0px 25px;
+    height: 50px;
+    z-index: 100;
+}
+
+.shopit-color {
+    background-color: rgb(29, 28, 28);
+}
+
+#btn-parent button {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    padding: 3px 5px;
+}
+
+
 
 form {
     display: flex;
@@ -52,82 +90,29 @@ form input {
     outline: none;
 }
 
-.beauty-nav {
-    width: 100vw;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: transparent;
-    padding: 0px 25px;
-    height: 50px;
-    z-index: 1000;
-}
-.nav-color {
-    background-color: crimson;
-}
 
-.logo h6 {
-    font-size: 30px;
-    color: white;
-    font-style: italic;
-}
-
-
-.beauty-list {
+.nav-list {
     position: fixed;
     height: 0%;
-    width: 230px;
-    left: 0;
+    width: 50%;
+    right: 0;
     top: 0;
     z-index: 1;
     transition: 0.5s;
     overflow: hidden;
-    background-color: rgb(200, 85, 108);
-}
-.beauty-drop {
-    display: none;
-}
-.beauty-list ul .li:hover .beauty-drop{
-    display: block;
-    border: 1px solid pink ;
-    margin-left: 15px;
-    width: 150px;
-    height: auto;
-}
-.beauty-drop ul li a{
-    font-size: 15px;
-    
+    background-color: white;
 }
 
-
-
-.fashion-drop {
-    display: none;
-}
-.beauty-list ul .li:hover .fashion-drop {
-    display: block;
-    border: 1px solid pink;
-    margin-left: 15px;
-    width: 150px;
-    height: auto;
-}
-.fashion-drop ul li a {
-    font-size: 15px;
-
-}
-
-.beauty-img {
+.nav-img {
     width: 100%;
-    min-height: 120px;
-    background-image: url(https://oatcosmetics.com/wp-content/uploads/2019/03/Face-Beauty.jpg);
+    height: 120px;
+    background-image: url(./bg\ commere.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.nav-btn1 {
+.nav-btn {
     background-color: transparent;
     position: absolute;
     right: 10px;
@@ -148,13 +133,13 @@ ul {
     left: 5%;
     top: 5%;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
     position: relative;
 }
 
 ul a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 1.5rem;
     font-weight: 600;
     cursor: pointer;
@@ -170,7 +155,7 @@ ul li a:hover {
     color: lightsalmon;
 }
 
-.burga {
+.burger {
     padding: 3px 3px;
     display: flex;
     flex-direction: column;
@@ -180,7 +165,7 @@ ul li a:hover {
     cursor: pointer;
 }
 
-.burga hr {
+.burger hr {
     width: 30px;
     height: 3px;
     background-color: white;
@@ -188,81 +173,84 @@ ul li a:hover {
     cursor: pointer;
 }
 
-#shopping-img {
-    min-height: 400px;
+.shop-img {
+    height: 200px;
     width: 100vw;
-    background-image: url('https://media.allure.com/photos/5c1160b4177eb32c66a6e55d/master/pass/allure-product-launches-social-lede.jpg?mbid=social_retweet');
+    background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b25saW5lJTIwc2hvcHBpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: black;
-    overflow: hidden;
-}
-#shopping-img .title {
-    margin-left: 50px;
+    padding: 0px 30px;
+    color: rgb(237, 234, 234);
 }
 
-#shopping-img h1 {
-    font-size: 70px;
+.shop-img h1 {
     color: transparent;
     font-weight: 700;
-    animation: btext_reveal .5s ease forwards;
+    animation: text_reveal .5s ease forwards;
     animation-delay: 1.5s;
     position: relative;
 }
 
-#shopping-img h1 span {
+.shop-img h1 span {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     margin: auto;
     width: 0;
-    background-color: pink;
-    animation: btext_reveal_box 1s ease;
+    background-color: crimson;
+    animation: text_reveal_box 1s ease;
     animation-delay: 1s;
 }
 
-#shopping-img h1 span:nth-child(1) {
+.shop-img h1 span:nth-child(1) {
     animation-delay: 1s;
 }
 
-#shopping-img h1 span:nth-child(2) {
+.shop-img h1 span:nth-child(2) {
     animation-delay: 2s;
 }
 
-#shopping-img h1:nth-child(1) {
+.shop-img h1:nth-child(1) {
     animation-delay: 1.5s;
 }
 
-#shopping-img h1:nth-child(2) {
+.shop-img h1:nth-child(2) {
     animation-delay: 2.5s;
 }
-#btn-shop button {
-    background: pink;
-    width: 200px;
-    height: 50px;
-    font-size: 30px;
-    font-weight: 700;
-    cursor: pointer;
-    border-radius: 10px;
-    border: 1px solid white;
+
+@keyframes text_reveal_box {
+    50% {
+        width: 90%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 90%;
+    }
+}
+
+@keyframes text_reveal {
+    100% {
+        color: white;
+    }
+}
+
+@keyframes text_reveal_name {
+    100% {
+        color: crimson;
+        font-weight: 500;
+    }
 }
 
 
-
-
-
-
-
-
-
-
-
-#acne {
+/* product */
+#product {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -270,16 +258,19 @@ ul li a:hover {
     align-items: center;
     width: 100vw;
 }
-#acne h1 {
+
+#product h1 {
     margin-bottom: 30px;
     font-size: 30px;
 }
-.acne-item {
+
+.product-item {
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.acne {
+
+.products {
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -289,14 +280,20 @@ ul li a:hover {
     gap: 10px;
 }
 
-.acne-info {
+.product-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
 }
-.acne-info button {
+
+.product-info h4 {
+    width: 150px;
+    text-align: center;
+}
+
+.product-info button {
     color: white;
     background-color: green;
     border: none;
@@ -307,99 +304,90 @@ ul li a:hover {
     cursor: pointer;
 
 }
-.acne-info button:hover {
+
+.product-info button:hover {
     font-weight: 800;
 }
 
-#moisturizer {
-    margin-top: 100px;
+/* end product */
+
+
+
+
+/* producct flow */
+#tools-Electronic {
+    margin-top: 110px;
+    width: 100vw;
+}
+
+.elect-bg {
+    background-image: url('https://images.unsplash.com/photo-1515940175183-6798529cb860?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FkZ2V0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 100vw;
-}
-#moisturizer h1 {
-    margin-bottom: 30px;
-    font-size: 30px;
+    padding: 30px;
+    margin-top: 150px;
 }
 
-#lotion {
-    margin-top: 100px;
-    display: flex;
+.elect-bg h1 {
+    color: white;
+    font-size: 25px;
+}
+
+.alert-message {
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-}
-#lotion h1 {
-    margin-bottom: 30px;
-    font-size: 30px;
-}
-
-@keyframes btext_reveal_box {
-    50% {
-        width: 60%;
-        left: 0;
-    }
-
-    100% {
-        width: 0;
-        left: 60%;
-    }
+    background-color: white;
+    bottom: 50px;
+    gap: 10px;
+    padding: 20px;
 }
 
-@keyframes btext_reveal {
-    100% {
-        color: white;
-    }
+.alert-message h4 {
+    font-size: 20px;
+    color: rgb(10, 10, 10, 0.5);
 }
 
-@keyframes btext_reveal_name {
-    100% {
-        color: pink;
-        font-weight: 500;
-    }
+.alert-message p {
+    width: 300px;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(10, 10, 10, 0.5);
 }
 
 
+/* end product flow */
 
 
-@media (max-width: 912px) {
-    #btn-shop button {
-        width: 150px;
-    }
-    #shopping-img h1 {
-        font-size: 30px;
-    }
-    #shopping-img {
-        min-height: 400px;
-    }
-    .logo h6 {
-        font-size: 20px;
-    }
-}
-
-
-@media (max-width: 540px) {
-    #shopping-img {
-        min-height: 250px;
-    }
-    #shopping-img h1 {
-        font-size: 30px;
-    }
-    #btn-shop button {
-        height: 30px;
-        font-size: 22px;
-        margin-top: 10px;
-    }
-    #shopping-img .title {
-        margin-left: 20px;
-    }
-}
 @media (min-width: 768px) {
+    .shop-img {
+        height: 500px;
+    }
 
-    .acne-item {
+    .shop-img h1 {
+        font-size: 50px;
+    }
+
+    #btn-parent button {
+        font-size: 40px;
+    }
+
+    .product-item {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .elect-bg h1 {
+        font-size: 50px;
+    }
+
+    .nav-list {
+        width: 20%;
     }
 }
