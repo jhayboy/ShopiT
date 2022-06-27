@@ -274,6 +274,10 @@ ul li a:hover {
     margin-bottom: 30px;
     font-size: 30px;
 }
+.acne-info h4 {
+    width: 150px;
+    text-align: center;
+}
 .acne-item {
     width: 100vw;
     display: grid;
